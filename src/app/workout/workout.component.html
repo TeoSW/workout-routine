@@ -1,0 +1,20 @@
+<div class="workout-container">
+    <h1>Workout Tracker</h1>
+  
+    <div *ngFor="let day of days; let dayIndex = index" class="day-section">
+      <h2 class="day-header">{{ day.name }}</h2>
+  
+      <div
+        *ngFor="let exercise of day.exercises; let exerciseIndex = index"
+        class="exercise-item"
+        [class.completed]="exercise.completed"
+        (click)="toggleCompletion(dayIndex, exerciseIndex)"
+      >
+        <h3>{{ exercise.name }}</h3>
+        <p>Sets: {{ exercise.sets }}</p>
+        <p>Reps: {{ exercise.reps }}</p>
+        <p>Band: {{ exercise.band }}</p>
+      </div>
+    </div>
+  </div>
+  

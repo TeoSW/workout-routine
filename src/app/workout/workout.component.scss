@@ -1,0 +1,48 @@
+.workout-container {
+    width: 80%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .day-header {
+    margin-top: 30px;
+    font-size: 1.5em;
+    color: #666;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+  }
+  
+  .exercise-item {
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffdddd; /* Red for incomplete */
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .exercise-item.completed {
+    background-color: #ddffdd; /* Green for completed */
+  }
+  
+  .exercise-item:hover {
+    background-color: #ffe6e6; /* Slightly lighter red on hover */
+  }
+  
+  h3 {
+    margin: 0 0 5px;
+    color: #333;
+  }
+  
+  p {
+    margin: 3px 0;
+    color: #555;
+  }
+  
